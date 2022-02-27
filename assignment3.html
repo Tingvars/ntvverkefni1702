@@ -5,27 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NTV –BeerMe Portal -Assignment 3</title>
+    <link rel="stylesheet" href="assignment3-style.css">
 </head>
 <body>
-
+<div class="formcontainer">
     <h3>Enter Your Info</h3>
 
     <form>
-        <p>Name: <input type="text" placeholder="Enter your name"></p>
-        <p>Age: <input type="text" placeholder="Enter your age"></p>
-        <p>Age: <input type="number" placeholder="18"></p>
+        <p>Name: </p><p><input type="text" placeholder="Enter your name" class="inputbox"></p>
+        <p>Age: </p><p><input type="text" placeholder="Enter your age" class="inputbox"></p>
+        <p>Age: </p><p><input type="number" placeholder="18" class="inputbox"></p>
+        <div class="gendercontainer">
+        <p>Select your gender: </p>
         <input type="radio" id="male" value="Male">
         <label for="male">Male</label><br>
         <input type="radio" id="female" value="female">
         <label for="female">Female</label><br>
         <input type="radio" id="other" value="Other">
         <label for="other">Other</label>
-        <p>Email: <input type="email" placeholder="Enter your email"></p>
-        <p>Bio: <br><textarea id="bio" name="bio" rows="3" cols="30">Enter your bio
+        </div>
+        <p>Email: </p><p><input type="email" placeholder="Enter your email" class="inputbox"></p>
+        <p>Bio: </p><p><textarea id="bio" name="bio" rows="3" cols="30">Enter your bio
             </textarea></p>
         <button>Submit</button>
 
     </form>
-    
+</div>
 </body>
 </html>
